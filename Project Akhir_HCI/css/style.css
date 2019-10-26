@@ -1,0 +1,292 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #885d5d;
+	font-family: 'Gill Sans', 
+	'Gill Sans MT', Calibri, 
+	'Trebuchet MS', sans-serif;
+}
+
+a{
+	color : #000;
+	text-decoration: none;
+}
+/* dropdown */
+.dropdown{
+    position: relative;
+    color: black;
+    display: inline-block;  
+    position: relative;
+    text-align: center;
+}
+.btn{
+    padding: 14px 12px;
+}
+.item{
+    position: absolute;
+    background-color: pink;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+.dropdown:hover .item{
+    display: block;
+} 
+.item>div:hover{
+    background-color: red;
+}
+
+/* NAV */
+nav{
+	background-color: #6a4949;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+	font-size: 24px;
+}
+
+.logo{
+	width: 120px;
+	height: 120px;
+	margin-left: 10px;
+}
+.navlink-atas li{
+	display: inline-block;
+	margin: auto 10px;
+}
+.navlink-atas a:hover{
+	color : yellow;
+}
+
+.menu-expand{
+	display: none;
+	background-image: url('../AssetGambar/bijikopi.jpg');
+	background-size: 100% 100%;
+	padding: 20px 15%;
+	opacity: 0.8;
+}
+
+.item-isi{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.kopi,.dessert{
+	display: flex;
+	width: 500px;
+	height: 300px;
+	align-items: center;
+	justify-content: center;
+	transition: 1s all;
+	background-size: 100% 100%;
+	opacity: 0.5;
+	font-size: 36px;
+	text-align: center;
+	background: white;
+}
+
+.kopi:hover,.dessert:hover{
+	transform: scale(1.1, 1.1);
+	opacity: 0.8;
+	color: red;
+
+}
+/* CONTENT */
+.content{
+	padding: 0 10%;
+	min-height: 600px;
+	text-align: center;
+}
+.content-isi{
+	width: 100%;
+	height: 500px;
+	margin: 50px auto;
+}
+
+#image-slider{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+#slides{
+	width: 5000px;
+    padding: 0;
+    margin: 0;
+}
+.slide{
+    height: 400px;
+    width: 1230px;
+    float:left;
+    position: relative;
+}
+.slide-content{
+	display: none;
+	padding: 10px;
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	background-color:white;
+}
+.slide-content h2{
+	padding: 0;
+	margin: 0;
+	color: #17223b;
+}
+.slide img{
+	width: 1500px;
+	height: 400px;
+}
+.tulisandepan{
+	font-size: 24px;
+	font-family: 'Courier New', Courier, monospace
+}
+.tulisandepan h3{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: yellowgreen;
+}
+.tulisandepan h2{
+	font-family: Verdana, Geneva, Tahoma, sans-serif ;
+	color: beige;
+}
+
+/* FOOTER */
+footer{
+	padding: 20px 10%;
+	min-height: 300px;
+	background-color: rgb(161, 91, 91);
+	color :white;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+}
+.footer h3{
+	margin-bottom: 18px;
+}
+.footerlink li{
+	display: inline-block;
+	margin :  auto 18px;
+}
+.footerlink a{
+	color :  white;
+	font-size: 24px;
+}
+.sosmed{
+	text-align: center;
+	margin : 35px auto;
+}
+.sosmed p{
+	margin-top: 30px;
+	color: black;
+}
+.sosmed img{
+	width: 55px;
+	height: 55px;
+	margin: auto 30px;
+	
+}
+.sosmed img:hover{
+	transform: scale(1.1, 1.1);
+	opacity: 0.9;
+}
+
+/* menukopi */
+.menukopi{
+	font-size: 24px;
+}
+.menukopi img:hover{
+	transform: scale(1.02,1.01);
+}
+/* menudessert*/
+.menudessert{
+	font-size: 24px;
+}
+.menudessert img:hover{
+	transform: scale(1.02,1.01);
+}
+
+/* ABOUT */
+.about{
+	padding: 10% 10%;
+	display: block;
+}
+
+.about img{
+	width: 100%;
+	height: 350px;
+}
+
+.tulisan {
+	display: inline-block;
+	width: 50%;	
+	color: white;
+	font-size: 22px;
+}
+
+.gambarabout{
+	display: inline-block;
+	width: 50%;
+	float: right;
+}
+
+/* card */
+.form{
+	text-align: center;
+}
+
+@media only screen and (max-width:620px){
+    body{
+        background-color:brown;
+    }
+    .dropdown{
+        display: block;
+    }
+    .item{
+        position: relative;
+    }
+    #copyright{
+        position: relative;
+    }
+    #logo{
+        position: relative;
+	}
+	.menukopi img{
+		width: 70%;
+	}
+	.menudessert img{
+		width: 70%;
+	}
+	/* #slides{
+		width: 50%;
+		
+	}
+	#image-slider{
+		width: 50%;
+
+	}
+	.slide{
+		width: 50%;
+	}
+	.slide-content{
+		width: 50%;
+		} */
+	.menu-expand{
+		width: 50%;
+	}
+		.item-isi{
+			width: 50%;
+		}
+	}
+
+
+
+
+
+
+
